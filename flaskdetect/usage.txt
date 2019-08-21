@@ -1,0 +1,25 @@
+OpenCV video streaming with flask on RPi3
+
+1) Install flask_opencv_streamer package
+
+   # must to use "--no-deps" to avoid installing old opencv version
+   sudo -i
+   pip3 install flask_opencv_streamer --no-deps
+   
+2) Run python code:
+   
+   # use 'pi' account
+   python3 cvstream_flask.py # streaming only
+   
+   python3 fdetect_flask.py  # streaming with face detect
+   
+   
+3) View video stream
+   Open web browser, visit URL: http://192.168.137.10:3030/video_feed
+   
+   
+Reference:
+  
+https://pypi.org/project/flask-opencv-streamer/
+
+   
